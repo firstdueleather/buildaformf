@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">how as your experience</p>
+    <fieldset>
+
+        <form id="survey-form">
+            <label id="name-label" for="name">Name (required):</label>
+            <input id="name" name="name" placeholder="Ex. John Doe" required type="text" value="name" />
+            <label id="email-label" for="email">Email address (required):</label>
+            <input placeholder="example@email.com" required id="email" type="email" name="email" size="20" />
+
+            <label id="number-label" for="number">Phone number</label>
+            <input placeholder="+1(555)55-5555" required id="number" type="number" name="number" min="8" max="15" />
+
+             <legend>Was this your first time at our hotel?</legend>
+            <label>
+                <input type="radio" name="yes-no" value="yes-no"> Yes
+            </label>
+            <label>
+                <input type="radio" name="yes-no" value="yes-no"> No
+            </label>
+
+            <legend>Was your stay for?</legend>
+            <label>
+                <input type="radio" name="business-pleasure" value="business-pleasure"> Business
+            </label>
+            <label>
+                <input type="radio" name="business-pleasure" value="business-pleasure"> Pleasure
+            </label>
+
+            <label for="service">How was the service?</label>
+            <select name="service" id="dropdown">
+                <option value="poor">Poor</option>
+                <option value="satisfactory">Satisfactory</option>
+                <option value="good">Good</option>
+                <option value="very-good">Very Good</option>
+                <option selected value="excellent">Excellent</option>
+            </select>
+            <legend>
+                Why did you choose to stay at our hotel? (Check all that apply)
+            </legend>
+            <input type="checkbox" id="ads" name="ads" value="ads" />
+            <label for="ads">Social Media Ads</label>
+
+            <label for="recommendation">Personal Recommendation</label>
+            <input type="checkbox" id="recommendation" name="recommendation" value="recommendation">
+            <label for="comments">Other Comments?</label>
+            <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    </fieldset>
+</body>
+
+</html>
+
+** end of index.html **
+
